@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products - Portfolio Suite</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar container">
+      <h1 class="logo">MyPortfolio</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="notes.html">Notes App</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container page-content">
+    <section class="section">
+      <h2>Product Listing Page</h2>
+      <p>
+        Filter products by category and sort them by price or rating.
+      </p>
+
+      <div class="controls">
+        <select id="categoryFilter">
+          <option value="all">All Categories</option>
+          <option value="Laptop">Laptop</option>
+          <option value="Phone">Phone</option>
+          <option value="Accessories">Accessories</option>
+        </select>
+
+        <select id="sortOption">
+          <option value="default">Sort By</option>
+          <option value="priceLowHigh">Price: Low to High</option>
+          <option value="priceHighLow">Price: High to Low</option>
+          <option value="ratingHighLow">Rating: High to Low</option>
+        </select>
+      </div>
+
+      <div id="productContainer" class="product-grid"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 My Portfolio Suite | Product Listing</p>
+  </footer>
+
+  <script src="js/products.js"></script>
+</body>
+</html>
